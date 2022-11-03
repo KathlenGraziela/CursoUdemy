@@ -6,8 +6,15 @@ namespace ExercicioUdemy3
     class Produto
     {
         public string Nome;
-        public double Preco, ValorTotal;
+        public double Preco;
         public int Quantidade;
+
+        public Produto(string nome, double preco, int quantidade)
+        {
+            Nome = nome;
+            Preco = preco;
+            Quantidade = quantidade;
+        }
 
         public double ValorTotalEmEstoque()
         {
